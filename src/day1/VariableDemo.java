@@ -7,6 +7,8 @@ public class VariableDemo {
 		// TODO Auto-generated method stub
 		
 		int abc = 15;
+		
+		//testing of git 
 			
 		System.out.println("value of the given variable is .... "+abc);
 		
