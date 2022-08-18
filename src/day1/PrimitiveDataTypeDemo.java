@@ -1,5 +1,8 @@
 package day1;
 
+
+
+
 public class PrimitiveDataTypeDemo {
 
 	public static void main(String[] args) {

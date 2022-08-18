@@ -2,11 +2,17 @@ package day1;
 
 public class DemoInstanceVariable {
 
-	public int var1 = 500;
+	public int var1 = 500; // instance variables
 
 	public String name = "Hello"; // instance variables
 	
 	public static int var2=5000;
+	
+	
+	
+	
+	
+	
 	
 
 	public static void main(String[] args) {
@@ -18,6 +24,8 @@ public class DemoInstanceVariable {
 		System.out.println(obj.var1);
 
 		System.out.println(obj.name);
+		
+		
 //		System.out.println(obj.var2);
 //		System.out.println(var2);
 		System.out.println(DemoInstanceVariable.var2);
