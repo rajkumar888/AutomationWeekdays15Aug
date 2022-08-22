@@ -3,9 +3,8 @@ package day2.rangedemo;
 public class TaskCaseExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		String itemA = "Item A";
+		String itemA = "Item A";		// string literals
 		String itemB = "Item B";
 		String itemC = "Item C";
 		
@@ -24,7 +23,9 @@ public class TaskCaseExample {
 		
 		double finalAmount = bill -(bill*discount)+(bill*servicetax) ;
 		
-		System.out.println("Final Amount "+ finalAmount);
+//		System.out.println("Final Amount "+ finalAmount);
+		
+		System.out.println("Final amount for ItemA ItenmB and ItemC "+itemA+" "+itemB+" "+itemC+" -> "+finalAmount);
 		
 		
 		
