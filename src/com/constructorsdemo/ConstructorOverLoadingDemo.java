@@ -2,8 +2,8 @@ package com.constructorsdemo;
 
 public class ConstructorOverLoadingDemo {
 	
-	int x;
-	char ch;
+	public int x=100;
+	public char ch='A';
 	
 	// without any argument or default constructor
 	public ConstructorOverLoadingDemo(){
@@ -15,6 +15,7 @@ public class ConstructorOverLoadingDemo {
 		System.out.println(" integer argument constructor");
 	}
 	
+	// this() or super()
 	
 	public ConstructorOverLoadingDemo(char letter){
 		System.out.println(" char argument constructor");
@@ -32,7 +33,7 @@ public class ConstructorOverLoadingDemo {
 		System.out.println(" char and int argument constructor");
 	}
 	
-	ConstructorOverLoadingDemo(int x, char letter, String name){
+	 ConstructorOverLoadingDemo(int x, char letter, String name){
 		System.out.println(" default int and char and String argument constructor");
 	}
 	
