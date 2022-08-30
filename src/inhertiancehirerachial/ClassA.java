@@ -1,4 +1,4 @@
-package packA;
+package inhertiancehirerachial;
 
 public class ClassA {
 
@@ -7,14 +7,10 @@ public class ClassA {
 	protected int protectedA;
 	public int publicA;
 	public int test;
-	
-	public ClassA(){
-		
-		
+
+	public ClassA() {
+
 	}
-	
-	
-	
 
 	public void test() {
 		System.out.println("inside method of ClassA");
@@ -35,13 +31,12 @@ public class ClassA {
 	protected void protectedA() {
 		System.out.println("protected method is ... called");
 	}
-	
-	
+
 	public static void main(String[] args) {
 		ClassA obj = new ClassA();
-		
+
 		obj.setprivateA();
-		
+
 		System.out.println(obj.privateA);
 	}
 }

@@ -10,9 +10,12 @@ public class ClassC extends ClassB {
 	}
 
 	public static void main(String[] args) {
-		// ClassC obj = new ClassC();
+		 ClassC obj = new ClassC();
 
-		ClassA obja = new ClassC();
+//		ClassA obja = new ClassC();
+		
+		
+		 
 
 //		obja.test();
 		

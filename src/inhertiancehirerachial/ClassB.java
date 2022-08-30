@@ -1,6 +1,6 @@
-package packB;
+package inhertiancehirerachial;
 
-import packA.ClassA;
+
 
 public class ClassB extends ClassA{
 	
@@ -13,28 +13,30 @@ public class ClassB extends ClassA{
 	public int publicB;
 	
 	
+	public void test(){
+		
+		System.out.println("inside method of ClassB");
+	}
+
 	
-	public void demoOfParentChild(){
-		
+	public void demoAccess(){
 //		System.out.println(privateA);
-//		
-//		System.out.println(defaultA);
 		
+		System.out.println(defaultA);
 		System.out.println(protectedA);
-		
 		System.out.println(publicA);
 		
-		System.out.println(test);
 	}
 	
+
 	
 	public static void main(String[] args) {
 		
 		ClassB obj = new ClassB();
 		
 		
-	
 	}
+	
 	
 
 }

@@ -1,4 +1,4 @@
-package packC;
+package inhertiancehirerachial;
 
 import packA.ClassA;
 import packB.ClassB;
@@ -21,22 +21,6 @@ public class ClassC extends ClassA {
 
 	}
 
-	public static void main(String[] args) {
-
-		//
-
-//		ClassA obja = new ClassC();
-//		ClassB objb = new ClassC();
-//		ClassC objc = new ClassC();
-
-		// ClassA obj = new ClassA();
-
-		// obj.publicA=100;
-
-		// System.out.println(obj.protectedA);
-
-		// System.out.println(obj.publicA);
-
-	}
+	
 
 }

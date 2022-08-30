@@ -1,8 +1,8 @@
-package packB;
+package inhertiancehirerachial;
 
 import packA.ClassA;
 
-public class ClassB extends ClassA{
+public class ClassD extends ClassA{
 	
 	private int privateB;
 	
@@ -17,7 +17,7 @@ public class ClassB extends ClassA{
 	public void demoOfParentChild(){
 		
 //		System.out.println(privateA);
-//		
+		
 //		System.out.println(defaultA);
 		
 		System.out.println(protectedA);
@@ -27,14 +27,6 @@ public class ClassB extends ClassA{
 		System.out.println(test);
 	}
 	
-	
-	public static void main(String[] args) {
-		
-		ClassB obj = new ClassB();
-		
-		
-	
-	}
 	
 
 }
