@@ -1,4 +1,4 @@
-package inhertiancehirerachial;
+package inheritancehierarchial2;
 
 
 

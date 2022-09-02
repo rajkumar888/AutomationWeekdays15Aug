@@ -1,4 +1,4 @@
-package com.abstractclass;
+package abstractclassDemo;
 
 public abstract class AbstractClassDemo {
 	
@@ -19,6 +19,7 @@ public abstract class AbstractClassDemo {
 	
 	
 	public abstract void show();
+	
 	
 	public void display(){
 		System.out.println("inside display");

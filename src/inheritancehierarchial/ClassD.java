@@ -1,4 +1,4 @@
-package hierarchialInheritance;
+package inheritancehierarchial;
 
 
 

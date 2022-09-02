@@ -7,7 +7,6 @@ public interface Shape {
 	int x=500;
 	
 	public abstract int getArea();
-
 	public abstract int getPerimeter();
 	
 	

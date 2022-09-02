@@ -1,4 +1,4 @@
-package com.abstractclass;
+package abstractclassDemo;
 
 public class DemoChildAbstract extends ChildAbstractClassDemo{
 
@@ -21,6 +21,8 @@ public class DemoChildAbstract extends ChildAbstractClassDemo{
 	public DemoChildAbstract(int x){
 		super( x);	
 		}
+
+	
 	
 
 }

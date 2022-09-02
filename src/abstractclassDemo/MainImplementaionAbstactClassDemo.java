@@ -1,4 +1,4 @@
-package com.abstractclass;
+package abstractclassDemo;
 
 
 
@@ -19,7 +19,13 @@ public class MainImplementaionAbstactClassDemo {
 //		DemoChildAbstract obj = new DemoChildAbstract();
 		
 		
-		new DemoChildAbstract(100);
+		new DemoChildAbstract(100);  // anonymous object
+		
+		
+//		AbstractClassDemo obj = new DemoChildAbstract();
+		
+		DemoChildAbstract obj = new DemoChildAbstract();
+		
 		
 	}
 

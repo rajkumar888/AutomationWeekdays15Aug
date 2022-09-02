@@ -15,6 +15,8 @@ public class RectangleImp {
 		
 		Shape shape = new Rectangle(50,30);
 		
+		Shape.testStaticDemo();
+		
 	}
 
 }

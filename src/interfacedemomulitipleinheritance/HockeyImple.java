@@ -1,4 +1,4 @@
-package interfacedemo.multiple;
+package interfacedemomulitipleinheritance;
 
 public class HockeyImple implements Hockey {
 

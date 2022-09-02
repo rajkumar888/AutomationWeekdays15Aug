@@ -1,4 +1,4 @@
-package com.abstractclass;
+package abstractclassDemo;
 
 public abstract class ChildAbstractClassDemo extends AbstractClassDemo{
 	

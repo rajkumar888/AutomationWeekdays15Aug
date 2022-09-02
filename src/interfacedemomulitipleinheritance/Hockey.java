@@ -1,4 +1,4 @@
-package interfacedemo.multiple;
+package interfacedemomulitipleinheritance;
 
 public interface Hockey extends Event, Sports {
 	
