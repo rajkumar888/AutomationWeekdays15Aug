@@ -1,4 +1,4 @@
-package com.constructorsdemo;
+package constructorsdemo2;
 
 public class CopyConstructorDemo {
 

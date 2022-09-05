@@ -1,4 +1,4 @@
-package com.constructorsdemo;
+package constructorsdemo2;
 
 public class ConsOverImple {
 
@@ -12,8 +12,8 @@ public class ConsOverImple {
 		ConstructorOverLoadingDemo obj4 = new ConstructorOverLoadingDemo(10,'A');
 		ConstructorOverLoadingDemo obj5 = new ConstructorOverLoadingDemo('B',10);
 		ConstructorOverLoadingDemo obj8 = new ConstructorOverLoadingDemo(obj5);
-		System.out.println(new ConstructorOverLoadingDemo(10).x);
-		System.out.println(new ConstructorOverLoadingDemo(10).ch);
+//		System.out.println(new ConstructorOverLoadingDemo(10).x);
+//		System.out.println(new ConstructorOverLoadingDemo(10).ch);
 		
 		
 	}

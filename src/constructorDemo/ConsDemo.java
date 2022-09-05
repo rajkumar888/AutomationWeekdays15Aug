@@ -1,6 +1,6 @@
 package constructorDemo;
 
-import com.constructorsdemo.ConstructorChainingDemo;
+import constructorsdemo2.ConstructorChainingDemo;
 
 public class ConsDemo {
 

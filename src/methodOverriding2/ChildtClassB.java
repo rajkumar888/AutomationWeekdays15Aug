@@ -2,6 +2,7 @@ package methodOverriding2;
 
 public class ChildtClassB extends ParenntClassA{
 
+	// method overloading demo
 	public void method3() {
 		System.out.println("method3 form ChildtClassB");
 	}
@@ -12,7 +13,7 @@ public class ChildtClassB extends ParenntClassA{
 		System.out.println("commonMethod form ChildtClassB");
 	}
 	
-	
+	// for over riding demo
 	public ChildtClassB covariantReturnType() {
 		System.out.println("covariantReturnType form ChildtClassB");
 		return new ChildtClassB();
