@@ -23,5 +23,9 @@ public class ChildtClassB extends ParenntClassA{
 	public void childclassmethod(){
 		System.out.println("childclassmethod form ChildtClassB");
 	}
+	
+	public static void teststatic(){
+		System.out.println("static method overridign test Class B");
+	}
 
 }

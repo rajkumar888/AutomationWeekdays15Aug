@@ -21,5 +21,9 @@ public class ParenntClassA {
 		System.out.println("covariantReturnType form ParenntClassA");
 		return new ParenntClassA();
 	}
+	
+	public static void teststatic(){
+		System.out.println("static method overridign test Parent A");
+	}
 
 }
