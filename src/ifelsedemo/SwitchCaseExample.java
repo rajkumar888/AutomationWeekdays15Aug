@@ -4,14 +4,14 @@ public class SwitchCaseExample {
 
 	public static void main(String[] args) {
 
-		char ch = 'b';
+		char ch = 'X';
 
 		switch (ch) {
 		
 		default:
 			System.out.println("Consonant..");
 			break;
-
+		
 		case 'A':
 		case 'a':
 		case 'E':
@@ -23,7 +23,11 @@ public class SwitchCaseExample {
 		case 'U':
 		case 'u':
 			System.out.println("Vowel");
-//			break;
+			break;
+			
+			
+		
+			
 		} // end of switch
 
 	}

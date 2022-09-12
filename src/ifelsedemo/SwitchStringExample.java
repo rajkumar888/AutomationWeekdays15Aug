@@ -3,7 +3,7 @@ package ifelsedemo;
 public class SwitchStringExample {
 	public static void main(String[] args) {
 		
-		String levelString = "Beginner";
+		String levelString = "Intermediate";
 		int level = 0;
 		
 		switch (levelString) {
@@ -18,8 +18,6 @@ public class SwitchStringExample {
 			level = 3;
 			break;
 		default:
-			level = 0;
-			break;
 		}
 		
 		System.out.println("Your Level is: " + level);

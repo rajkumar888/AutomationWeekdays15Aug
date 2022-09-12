@@ -4,7 +4,7 @@ public class GradingDemoUsingIfElseIf {
 
 	public static void main(String[] args) {
 
-		int marks=100;
+		int marks=45;
 		
 		// marks >=90 - A
 		// marks <=89 and marks >= 80 - B
@@ -37,7 +37,6 @@ public class GradingDemoUsingIfElseIf {
 		} else{
 			System.out.println("Grade F");
 		}
-		
 		
 		System.out.println("end of program......");
 		

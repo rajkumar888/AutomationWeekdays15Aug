@@ -6,7 +6,7 @@ public class StringWithIFExample {
 
 		String language = "java";
 
-		if (language == "Java") {
+		if (language == "java") {
 			System.out.println("Java is good  Programming Language");
 		}
 

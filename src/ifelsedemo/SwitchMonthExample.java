@@ -3,7 +3,7 @@ package ifelsedemo;
 public class SwitchMonthExample {
 	public static void main(String[] args) {
 
-		int month = 15;
+		int month = 88;
 
 		String monthString = "";
 
