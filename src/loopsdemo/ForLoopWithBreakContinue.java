@@ -21,12 +21,10 @@ public class ForLoopWithBreakContinue {
 				ch++;
 				continue;
 			}
-			System.out.print((ch++)+" ");
-			
-			
 			if(ch>122){
 				break;
 			}
+			System.out.print((ch++)+" ");
 		}
 		
 

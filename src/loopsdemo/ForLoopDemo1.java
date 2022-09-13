@@ -8,16 +8,16 @@ public class ForLoopDemo1 {
 		
 //		// 2022 year to Welcome
 //		
-//		String[] strarray = str.split(" ");
+		String[] strarray = str.split(" ");
 //		
 //		
-//		for(int i=strarray.length-1 ; i>=0 ; i--){
-//			System.out.print(strarray[i]+" ");
-//		}
-		
-		for(int i=str.length()-1; i>=0; i--){
-			System.out.print(str.charAt(i));
+		for(int i=strarray.length-1 ; i>=0 ; i--){
+			System.out.print(strarray[i]+" ");
 		}
+//		
+//		for(int i=str.length()-1; i>=0; i--){
+//			System.out.print(str.charAt(i));
+//		}
 		
 	}
 
