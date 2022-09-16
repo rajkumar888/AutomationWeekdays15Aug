@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class ForLoopDemo {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException  {
 		
 //		for(int i=100; i>=1  ; i--)
 //		{
@@ -25,29 +25,30 @@ public class ForLoopDemo {
 //		 
 //		 while(i<=10){
 //		 System.out.println(new Date()+"......."+(i++));
-//		 Thread.sleep(1000);
+//		 Thread.sleep(2000);
 //		 }
 		 
 //		int z = 5;
 //		while (z <= 100) {
 //			System.out.print(z + " ");
-//			z+=5; //(z=z+2)
+//			z+=5; //(z=z+5)
 //		}
 
 //		int i = 1;
-//		for (; i <= 10;) {
+//		for (   ; i <= 10  ;      ) {
 //			System.out.println(new Date() + "......." + (i++));
 //			Thread.sleep(1000);
 //		}
 
 		
-		 int i=1;
+		 int i=1999;
+		 
 		 do{
 		 System.out.println(new Date()+"......."+(i++));
 		 }while(i<=10);
 		 
 
-
+		 
 	}
 
 }

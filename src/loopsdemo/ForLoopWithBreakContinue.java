@@ -16,7 +16,7 @@ public class ForLoopWithBreakContinue {
 		
 		char ch='A';
 		
-		for(int i=1;i<100;i++){
+		for(int i=1;i<=100;i++){
 			if(ch>90 && ch<97){
 				ch++;
 				continue;
@@ -27,6 +27,16 @@ public class ForLoopWithBreakContinue {
 			System.out.print((ch++)+" ");
 		}
 		
+		
+//		char ch='A';
+//		for(int num=0; num<=255; num++){
+//			if(ch>90 && ch<97){
+//			ch++;
+//			continue;
+//		}
+//			System.out.println(num + " "+ (char)num);
+//			ch++;
+//		}
 
 	}
 
