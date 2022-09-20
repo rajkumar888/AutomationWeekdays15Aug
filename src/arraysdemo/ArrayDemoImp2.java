@@ -23,13 +23,18 @@ public class ArrayDemoImp2 {
 		for (int v : values) {
 			System.out.println(v);
 		}
+		
 		System.out.println("........................");
 		Arrays.sort(values);
-		
+//		
 		for (int v : values) {
 			System.out.println(v);
 		}
 		
+		System.out.println("........reverse................");
+		for(int i= values.length-1; i>=0 ; i--){
+			System.out.println(values[i]);
+		}
 		System.out.println("end of program....");
 	}
 

@@ -9,6 +9,8 @@ public class ForLoopDemo1 {
 //		// 2022 year to Welcome
 //		
 		String[] strarray = str.split(" ");
+		
+//		{"Welcome", "to","year","2022"}
 //		
 //		
 		for(int i=strarray.length-1 ; i>=0 ; i--){
