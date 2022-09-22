@@ -6,27 +6,34 @@ public class ArrayDemoImpString {
 
 	String[] strarr = {"Computer", "Mouse", "Keyboard", "Mobile", "Speaker"};
 	
+	String[] sentence = "The quick brown fox jumps over the lazy dog".split(" ");
+	
 		
-		for( String xyz:strarr){
-			System.out.println(xyz);
-		}
-		
-		System.out.println(".....");
+//		for( String xyz : strarr){
+//			System.out.println(xyz);
+//		}
+//		System.out.println(".....");
 //		
-		for(int i=0; i< strarr.length ; i++){
-			System.out.println(strarr[i]);
-		}
-//		
-		System.out.println(".....");
-//		
-		for(int i=strarr.length - 1; i>=0  ; i--){
-			System.out.println(strarr[i]);
-		}
+//		for( String xyz : sentence){
+//			System.out.println(xyz);
+//		}
 		
-		String name="Test";
+//		System.out.println(".....");
+////		
+//		for(int i=0; i< strarr.length ; i++){
+//			System.out.println(strarr[i]);
+//		}
+////		
+//		System.out.println(".....");
+////		
+//		for(int i=strarr.length - 1; i>=0  ; i--){
+//			System.out.println(strarr[i]);
+//		}
 		
-		String str = new String("hello");
-		String str1 = new String("hello");
+//		String name="Test";
+//		
+//		String str = new String("hello");
+//		String str1 = new String("hello");
 		
 		
 	}
