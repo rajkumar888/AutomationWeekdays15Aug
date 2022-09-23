@@ -16,6 +16,14 @@ public class FactorialDemo {
 		}
 
 		System.out.println("Factorial of the given number " + x + " is " + factorial);
+		System.out.println("...........................");
+		factorial = 1;
+		
+		for (int i = x; i >= 1; i--) {
+
+			factorial *= i;
+		}
+		System.out.println("Factorial of the given number " + x + " is " + factorial);
 	}
 
 }
