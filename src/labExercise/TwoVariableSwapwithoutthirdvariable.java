@@ -1,6 +1,6 @@
-package labdemo;
+package labExercise;
 
-public class TwoVariableSwap {
+public class TwoVariableSwapwithoutthirdvariable {
 
 	public static void main(String[] args) {
 

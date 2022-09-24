@@ -1,4 +1,4 @@
-package methodOverloading;
+package methodOverriding2;
 
 public class MethodOverLoadingDemo {
 

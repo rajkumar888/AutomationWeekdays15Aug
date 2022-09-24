@@ -1,4 +1,4 @@
-package com.itnerview;
+package labExercise;
 
 public class Palindrome {
 
