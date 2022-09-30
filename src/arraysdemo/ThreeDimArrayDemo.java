@@ -12,7 +12,8 @@ public class ThreeDimArrayDemo {
 				
 						{
 								{5, 555666,8,8}, 
-								{7, 8,9,9,78}
+								{7, 8,9,9,78},
+								{76, 84,9,33,782}
 						},
 						
 						{
@@ -40,7 +41,6 @@ public class ThreeDimArrayDemo {
 			}
 			System.out.println(".....................");
 		}
-		
 		
 	}
 
