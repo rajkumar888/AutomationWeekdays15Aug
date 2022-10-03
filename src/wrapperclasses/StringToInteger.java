@@ -1,4 +1,4 @@
-package stringdemo;
+package wrapperclasses;
 
 public class StringToInteger {
 

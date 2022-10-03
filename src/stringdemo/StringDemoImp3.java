@@ -43,12 +43,19 @@ public class StringDemoImp3 {
 //		System.out.println(str1.equals(str2));
 //		System.out.println(str1.equalsIgnoreCase(str2));
 //		
-		System.out.println(str1.contains("World".toUpperCase()));
+//		System.out.println(str1.contains("World".toUpperCase()));
 //		
-//		String str888="   Computer        ";
-//		String str999="Keyboard";
+		String str888="   Com   puter        ";
+		
+//		System.out.println(str888);
+//		System.out.println(str888.length());
+//		System.out.println(str888.trim());
+//		System.out.println(str888.trim().length());
+		
+//		String str999="Keyboardcsd";
 //		
-//		System.out.println(str888.compareTo(str888));
+//		System.out.println(str888.trim().compareTo(str999));
+//		System.out.println("a".compareTo("A"));
 //		System.out.println("...................");
 //		System.out.println(str888.length());
 //		
@@ -61,9 +68,25 @@ public class StringDemoImp3 {
 //		
 //		System.out.println(str888.replace(' ', '.'));
 //		
+		String s1="My name is Khan. @ My 	+-#$name is Bob. My name is Sonoo. 12345 ";
+		System.out.println(s1);
+//		System.out.println(s1.replaceAll("\\s",""));
+//		System.out.println(s1.replaceAll("\\S",""));
+//		System.out.println(s1.replaceAll("\\d",""));
+//		System.out.println(s1.replaceAll("\\D",""));
+		
+//		System.out.println(s1.replaceAll("\\w",""));
+//		System.out.println(s1.replaceAll("\\W",""));
+		
+		System.out.println(s1.replaceAll("[abc]",""));
+		System.out.println(s1.replaceAll("[^abc]",""));
+		System.out.println(s1.replaceAll("[A-Z]",""));
+		System.out.println(s1.replaceAll("[a-z]",""));
+		System.out.println(s1.replaceAll("[0-9]",""));
+		
 //		
 //		String replacedemo="Hello world Java Hello world Java 1234";
-//		
+//		System.out.println(replacedemo.replaceAll("world", "Java"));
 //		
 //		System.out.println(replacedemo.replaceAll("\\d", ""));
 //		System.out.println(replacedemo.replaceAll("\\D", ""));
@@ -74,9 +97,10 @@ public class StringDemoImp3 {
 //		
 //		System.out.println("..................");
 //		
-//		String xyz="";
+		String xyz="";
 //		
-//		System.out.println(xyz.isEmpty());
+		System.out.println(xyz.isEmpty());
+		System.out.println(xyz.length()==0);
 		
 		
 	}
