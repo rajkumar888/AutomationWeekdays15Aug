@@ -8,29 +8,33 @@ public class IntergerDemo {
 	
 	public static void main(String[] args) {
 
+//		Integer z=100;
+		
 		Integer i = new Integer(100);
 		
 		int i1 = i.intValue();
 		
-		System.out.println(i1);
+//		System.out.println(i1);
+//		
+//		System.out.println(i);
 		
-		System.out.println(i);
-		
-		System.out.println(Math.random()*100);   
-		
-		int min = 1;  
-		int max = 100;  
-		double a = Math.random()*(max-min+1)+min;   
-		System.out.println(a); 
-		int b = (int)(Math.random()*(max-min+1)+min);  
-		System.out.println(b);  
+//		System.out.println(Math.random()*100);   
+//		
+//		int min = 1;  
+//		int max = 100;  
+//		
+//		double a = Math.random()*(max-min+1)+min;   
+//		System.out.println(a);
+//		
+//		int b = (int)(Math.random()*(max-min+1)+min);  
+//		System.out.println(b);  
 		
 		System.out.println("......................");
 		
-		for(int x=1;x<=50;x++){
+		for(int x=1;x<=10;x++){
 			
-//			System.out.println(new Random().nextInt(1000));
-			System.out.println(new Random().nextDouble());
+			System.out.println(new Random().nextInt(100));
+//			System.out.println(new Random().nextDouble());
 		}
 		
 		
