@@ -1,4 +1,4 @@
-package com.exceptiondemo;
+package exceptiondemo2;
 
 public class InvalidAgeExceptionDemo  extends RuntimeException  
 {  

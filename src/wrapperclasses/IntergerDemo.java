@@ -6,13 +6,15 @@ public class IntergerDemo {
 
 //	static int i = Integer.intValue();
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 //		Integer z=100;
 		
 		Integer i = new Integer(100);
 		
 		int i1 = i.intValue();
+		
+		Thread.sleep(1000);
 		
 //		System.out.println(i1);
 //		
@@ -33,8 +35,9 @@ public class IntergerDemo {
 		
 		for(int x=1;x<=10;x++){
 			
-			System.out.println(new Random().nextInt(100));
+//			System.out.println(new Random().nextInt(100));
 //			System.out.println(new Random().nextDouble());
+//			System.out.println(new Random().nextInt());
 		}
 		
 		

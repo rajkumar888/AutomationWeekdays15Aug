@@ -12,7 +12,7 @@ public class StringBufferDemo {
 		
 		
 //		System.out.println( sb);
-//		sb.append(" World");
+		sb.append(" World");
 //		System.out.println( sb);
 ////
 //		System.out.println("....................");
@@ -25,7 +25,7 @@ public class StringBufferDemo {
 		StringBuilder sbuild = new StringBuilder("Hello");
 
 //		System.out.println( sbuild);
-//		sbuild.append(" World");
+		sbuild.append(" World");
 //		System.out.println( sbuild);
 
 		System.out.println(sb.reverse());

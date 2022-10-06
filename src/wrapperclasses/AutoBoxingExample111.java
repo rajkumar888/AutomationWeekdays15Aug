@@ -1,6 +1,6 @@
 package wrapperclasses;
 
-public  class BoxingExample111 {
+public  class AutoBoxingExample111 {
 	 
 	public static void main(String[] args) {
 		  
@@ -8,7 +8,7 @@ public  class BoxingExample111 {
 		  Byte B = new Byte(b); 
 		  System.out.println(B);
 		  
-		  short s = 100; 
+		  short s = 101; 
 		  Short S = new Short(s); 
 		  System.out.println(S);
 		  
@@ -20,7 +20,7 @@ public  class BoxingExample111 {
 		  Long L = new Long(l); 
 		  System.out.println(L);
 
-		  float f = 120L; 
+		  float f = 120.00f; 
 		  Float F = new Float(f);
 		  System.out.println(F);
 

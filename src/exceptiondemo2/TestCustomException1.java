@@ -1,4 +1,4 @@
-package com.exceptiondemo;
+package exceptiondemo2;
 
 // class that uses custom exception InvalidAgeException  
 public class TestCustomException1  
