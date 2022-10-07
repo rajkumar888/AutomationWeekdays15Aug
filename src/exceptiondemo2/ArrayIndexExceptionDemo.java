@@ -3,7 +3,6 @@ package exceptiondemo2;
 public class ArrayIndexExceptionDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		
 		int[] arr = new int[5];
@@ -15,11 +14,14 @@ public class ArrayIndexExceptionDemo {
 		arr[4]=70;
 		
 		try{
+		System.out.println(arr[0]);
 		System.out.println(arr[1]);
 		System.out.println(arr[2]);
+//		System.exit(0);
 		System.out.println(arr[3]);
 		System.out.println(arr[4]);
 		System.out.println(arr[5]);
+		
 		}
 		catch(ArrayIndexOutOfBoundsException e){
 			System.out.println(e);

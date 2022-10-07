@@ -1,4 +1,4 @@
-package exceptiondemo2;
+package labExercise;
 
 public class GFG {
 	 

@@ -37,11 +37,11 @@ public class ClassA {
 	}
 	
 	
-	public static void main(String[] args) {
-		ClassA obj = new ClassA();
-		
-		obj.setprivateA();
-		
-		System.out.println(obj.privateA);
-	}
+//	public static void main(String[] args) {
+//		ClassA obj = new ClassA();
+//		
+//		obj.setprivateA();
+//		
+//		System.out.println(obj.privateA);
+//	}
 }
