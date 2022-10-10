@@ -15,8 +15,6 @@ public class ThrowsDemo
         File newFile = new File("test.txt");
 		FileInputStream stream = new FileInputStream(newFile);
 		
-		
-		
 		System.out.println("end of program....");
     }
 }

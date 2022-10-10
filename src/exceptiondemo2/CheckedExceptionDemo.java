@@ -9,12 +9,18 @@ public class CheckedExceptionDemo {
 	
   
   
-  public static void main(String[] args) throws FileNotFoundException  {
+  public static void main(String[] args)    {
  
       
       File newFile = new File("./test.txt");
 		
-      FileInputStream stream = new FileInputStream(newFile);
+      try {
+		FileInputStream stream = new FileInputStream(newFile);
+	} 
+      
+      catch (FileNotFoundException e) {
+		e.printStackTrace();
+	}
       
       
       System.out.println("end of the program.....");

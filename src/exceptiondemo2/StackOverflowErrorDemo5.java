@@ -1,6 +1,6 @@
 package exceptiondemo2;
 
-public class Test {
+public class StackOverflowErrorDemo5 {
 
 	public void m1(){
 		
@@ -16,11 +16,14 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		Test obj = new Test();
+		StackOverflowErrorDemo5 obj = new StackOverflowErrorDemo5();
 		
-		obj.m1();
+		try {
+			obj.m1();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 

@@ -15,9 +15,23 @@ public class OutOfMemoryErrorExample {
 		System.out.println(maxMemory);
 		
 
-		int[] matrix = new int[(int) (maxMemory + 1)];
+		int[] matrix;
+		try {
+			matrix = new int[(int) (maxMemory + 1)];
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally{
+			System.out.println("finally block is executed....");
+		}
 		
-		for (int i = 0; i < matrix.length; ++i)
-			matrix[i] = i + 1;
+		
+		
+		
+//		for (int i = 0; i < matrix.length; ++i)
+//			matrix[i] = i + 1;
+		
+		System.out.println("end of the program......");
+		
 	}
 }

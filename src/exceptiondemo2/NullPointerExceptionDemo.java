@@ -13,7 +13,6 @@ public class NullPointerExceptionDemo {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 //		
 //		NullPointerExceptionDemo obj = new NullPointerExceptionDemo();
@@ -37,11 +36,13 @@ public class NullPointerExceptionDemo {
 //		System.out.println("Hello");
 //		
 //		
-//		System.out.println("end of program");
-		
+//		
 //		System.out.println(str.length());
 //		System.out.println(str1.length());
-//		System.out.println(str2.length());
+		System.out.println(str2.length());
+		
+		System.out.println("end of program");
+		
 		
 		
 		

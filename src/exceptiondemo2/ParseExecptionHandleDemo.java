@@ -6,24 +6,28 @@ import java.util.Date;
 
 public class ParseExecptionHandleDemo {
 
-	public static void main(String[] args) throws ParseException, InterruptedException {
+	public static void main(String[] args) throws ParseException, InterruptedException  {
 
-		String inputdate = "21/02/2021";
+		String inputdate = "22/11/2022";
 
-		Date output = new SimpleDateFormat("dd/MM/yyyy").parse(inputdate);
+		SimpleDateFormat output = new SimpleDateFormat("dd/MM/yyyy");
+		Date testdateoutput = output.parse(inputdate);
+		System.out.println("Parsing done successfully");
 
-		String resultdate = new SimpleDateFormat("yyyy/MM/dd").format(output);
-
+		String resultdate = new SimpleDateFormat("yyyy/MM/dd").format(testdateoutput);
+//
 		System.out.println(resultdate);
 		
 		Thread.sleep(1000);
-		
-		
+//		
+//		
 		System.out.println("............................");
 		Date date = new Date();
-
-		SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-
+		
+		System.out.println(date);
+//
+		SimpleDateFormat formatter = new SimpleDateFormat("MMM/dd/yyyy");
+//
 		System.out.println(formatter.format(date));
 	}
 

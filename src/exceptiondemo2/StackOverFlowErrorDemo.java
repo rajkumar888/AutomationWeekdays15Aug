@@ -3,8 +3,9 @@ package exceptiondemo2;
 public class StackOverFlowErrorDemo {
 
 	static int i=1;
-	void show(){
+	public void show() throws InterruptedException{
 		System.out.println(i++);
+//		Thread.sleep(100);
 		show();
 	}
 	

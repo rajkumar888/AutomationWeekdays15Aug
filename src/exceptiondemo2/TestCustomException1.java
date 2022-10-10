@@ -23,7 +23,7 @@ public class TestCustomException1
         try  
         {  
             // calling the method   
-            validate(13);  
+        	TestCustomException1.validate(13);  
         }  
         catch (InvalidAgeExceptionDemo ex)  
         {  

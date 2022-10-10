@@ -6,11 +6,11 @@ public class MultipleCatchBlock4 {
 
 		try {
 			String s = null;
-			
 //			int x=100/0;
+//			System.out.println(s.length());
 			
-			System.out.println(s.length());
-			
+			System.out.println("hello world.......");
+//			System.exit(0);
 		} 
 		catch (ArithmeticException e) {
 			System.out.println("Arithmetic Exception occurs");
@@ -26,6 +26,11 @@ public class MultipleCatchBlock4 {
 			System.out.println("Parent Exception occurs");
 		}
 		
-		System.out.println("rest of the code");
+		finally{
+			System.out.println("finally block executed");
+		}
+		
+		
+		System.out.println("rest of the code.............");
 	}
 }

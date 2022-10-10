@@ -9,8 +9,8 @@ public class ThrowDemo {
 		try{
 			if (age < 18) {
 				// throw Arithmetic exception if not eligible to vote
-				throw new RuntimeException("Person is not eligible to vote");
-//				throw new RuntimeException();
+//				throw new RuntimeException("Person is not eligible to vote");
+				throw new RuntimeException();
 			} else {
 				System.out.println("Person is eligible to vote!!");
 			}

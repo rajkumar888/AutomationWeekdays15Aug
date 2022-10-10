@@ -7,8 +7,10 @@ public class TestThrow1 {
 	
     public static void validate(int age) {  
         if(age<18) {  
+        	
             //throw Arithmetic exception if not eligible to vote  
-            throw new ArithmeticException("Person is not eligible to vote");    
+            throw new ArithmeticException("Person is not eligible to vote");  
+//            throw new ArithmeticException();
         }  
         else {  
             System.out.println("Person is eligible to vote!!");  
@@ -17,11 +19,10 @@ public class TestThrow1 {
     
     
     
-    //main method  
     public static void main(String args[]){  
         //calling the function  
         try {
-			validate(13);
+        	TestThrow1.validate(20);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
