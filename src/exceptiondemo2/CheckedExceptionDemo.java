@@ -12,7 +12,7 @@ public class CheckedExceptionDemo {
   public static void main(String[] args)    {
  
       
-      File newFile = new File("./test.txt");
+      File newFile = new File("./test1.txt");
 		
       try {
 		FileInputStream stream = new FileInputStream(newFile);

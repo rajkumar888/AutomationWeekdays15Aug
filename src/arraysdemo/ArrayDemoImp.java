@@ -11,6 +11,7 @@ public class ArrayDemoImp {
 		
 		System.out.println(Arrays.equals(values, values1));
 		
+		
 //		System.out.println(values[values.length-1]);
 //		System.out.println(values[0]);
 //		System.out.println(values[values.length-values.length]);

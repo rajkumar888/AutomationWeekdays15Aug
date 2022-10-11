@@ -6,6 +6,7 @@ public class FinalVariableDemo {
 	final int y;
 	final int z;
 	static final int i;
+	int pqr=200;
 	
 	
 	
@@ -31,12 +32,17 @@ public class FinalVariableDemo {
 		
 		System.out.println(" main method in called ");
 		
-		FinalVariableDemo obj = new FinalVariableDemo();
+		final FinalVariableDemo obj = new FinalVariableDemo();
 		
-		System.out.println("value of x "+obj.x);
+		System.out.println("value of x "+obj.i);
 		
 //		obj.x=500; // not allowed
-
+		
+//		obj = new FinalVariableDemo();
+		System.out.println("value of x "+obj.pqr);
+		obj.pqr=1000;
+		System.out.println("value of x "+obj.pqr);
+		
 	}
 
 }

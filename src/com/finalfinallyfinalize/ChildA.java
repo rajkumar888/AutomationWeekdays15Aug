@@ -1,11 +1,15 @@
 package com.finalfinallyfinalize;
 
-public class ChildA extends Exception{
+public class ChildA extends ParentA{
 
 	int y = 200;
-
-//	public void show() {
+	
+//	public void display() {
 //
-//		System.out.println("show method of child class ");
+//		System.out.println("Value of x " + y);
 //	}
+
+	public static void test(){
+		System.out.println("inside test method");
+	}
 }
