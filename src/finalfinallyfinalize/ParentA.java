@@ -1,4 +1,4 @@
-package com.finalfinallyfinalize;
+package finalfinallyfinalize;
 
 public class ParentA {
 
