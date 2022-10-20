@@ -14,19 +14,43 @@ public class ArryaListDemo666 {
 		list1.add("Java");
 		list1.add("Microsoft");
 		list1.add("Apple");
+		list1.add("Fan");
+		list1.add("Table");
+		list1.add("Java");
+		list1.add("Microsoft");
+		list1.add("100");
 
 //		System.out.println(list1);
 
-		list1.forEach(value -> System.out.print(value+" ") );
+//		list1.forEach(value -> System.out.print(value+" ") );
+//		
+//		System.out.println(".......................");
+//		
+//		list1.forEach(System.out::println);  
+//		
+		System.out.println("\n.......................");
+		list1.stream().forEach(value -> System.out.print(value+" ") );
 		
-		System.out.println(".......................");
+		System.out.println("\n.......................");
 		
-		list1.forEach(System.out::println);  
+		list1
+		.stream()
+		.distinct()
+		.forEach(value -> System.out.print(value+" ") );
 		
-		System.out.println(".......................");
-//		list1.stream().forEach(value -> System.out.print(value+" ") );
+		
+//		list1.stream().forEach(new Consumer() {
+//		  @Override
+//	    public void accept(String value) {
+//	      System.out.println(value);
+//	    }
+//		};)
+
+		
+//		System.out.println("\n.......................");
 //		list1.stream().forEachOrdered(value -> System.out.print(value+" ") );
-		list1.stream().forEachOrdered(System.out::println);
+//		System.out.println("\n.......................");
+//		list1.stream().forEachOrdered(System.out::println);
 
 		//
 		// for (int i = 0; i < list1.size(); i++) {

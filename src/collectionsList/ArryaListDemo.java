@@ -38,17 +38,83 @@ public class ArryaListDemo {
 		list1.add("Microsoft");
 		list1.add("Apple");
 		list1.add("100");
-		
-		ArrayList<String> list2 = new ArrayList<String>();
-		list2.add("Microsoft");
-		list2.add("Apple");
-		list2.add("100");
+//		list1.add(0,null);
+//		list1.add(5,"Hello");
 		
 		
-		System.out.println(list1);
-//		list1.removeAll(list2);
-		list1.retainAll(list2);
-		System.out.println(list1);
+//		System.out.println(list1);
+		
+		System.out.println("\n...........................");
+		
+		list1.forEach(s -> System.out.print(s+" ")); // lambda expression
+		
+		System.out.println("\n...........................");
+		
+		list1.forEach(System.out::println); // java 8 pattern
+		
+		System.out.println("\n...........................");
+		
+		for (String ls : list1) {
+		System.out.print(ls + " ");
+	}
+		System.out.println("\n...........................");
+		
+//		ArrayList<String> list3 = new ArrayList<String>();
+//		list3.add("test1");
+//		list3.add("test2");
+//		list3.add("test3");
+//		list3.add("test4");
+//		list3.add("test5");
+//		list3.add("test6");
+//		list3.add("test1");
+//		list3.add("test5");
+//		list3.add(null);
+//		
+////		list1.addAll(list3);
+//		
+//		list1.addAll(0,list3);
+		
+//		System.out.println(list1);
+		
+		
+		
+//		System.out.println("\n...........................");
+//		
+//	
+//		
+//		System.out.println("\n...........................");
+//		
+//		for (String ls : list1) {
+//			System.out.print(ls + " ");
+//		}
+		
+		
+//		ArrayList<String> list3 = new ArrayList<String>();
+//		list3.add("test1");
+//		list3.add("test2");
+//		list3.add("test3");
+//		list3.add("test4");
+//		list3.add("test5");
+//		list3.add("test6");
+//		list3.add("test1");
+//		list3.add("test5");
+//		list3.add(null);
+		
+//		System.out.println(list1);
+////		list1.addAll(list3);
+//		list1.addAll(6, list3);
+//		System.out.println(list1);
+		
+//		ArrayList<String> list2 = new ArrayList<String>();
+//		list2.add("Microsoft");
+//		list2.add("Apple");
+//		list2.add("100");
+//		
+//		
+//		System.out.println(list1);
+////		list1.removeAll(list2);
+//		list1.retainAll(list2);
+//		System.out.println(list1);
 		
 //		
 ////		System.out.println(list1.isEmpty());
@@ -191,15 +257,15 @@ public class ArryaListDemo {
 //		}
 //		
 //		
-		List<String> list555 = Arrays.asList("abc", "fdf", "bc", "efg", "abcd","qweq", "jkl");
-		
-		String[] str111 = {"computer", "mouse", "keyboard"};
-		
-		List<String> list666 = Arrays.asList(str111);
-		
-		int[] intarr={10,20,30,40,50};
-		
-		List<int[]> list777 = Arrays.asList(intarr);
+//		List<String> list555 = Arrays.asList("abc", "fdf", "bc", "efg", "abcd","qweq", "jkl");
+//		
+//		String[] str111 = {"computer", "mouse", "keyboard"};
+//		
+//		List<String> list666 = Arrays.asList(str111);
+//		
+//		int[] intarr={10,20,30,40,50};
+//		
+//		List<int[]> list777 = Arrays.asList(intarr);
 		
 	}
 
