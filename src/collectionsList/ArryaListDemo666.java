@@ -37,50 +37,67 @@ public class ArryaListDemo666 {
 		// System.out.println("\n.......................");
 		// list1.stream().forEach(value -> System.out.print(value+" ") );
 
-		// System.out.println("\n.......................");
+//		 System.out.println("\n.......................");
 
-		// list1
-		// .stream()
-		// .distinct()
-		// .forEach(value -> System.out.print(value+" ") );
+//		 list1
+//		 .stream()
+//		 .distinct()
+//		 .forEach(value -> System.out.print(value+" ") );
 
-		// System.out.println("\n.......................");
+//		 System.out.println("\n.......................");
 
-		list1.stream().distinct().forEach(new Consumer<String>() {
-
-			public void accept(String name) {
-				System.out.print(name + " ");
-			}
-		});
-
-		System.out.println("\n.......................");
-
-		list1.stream().forEach(new Consumer<String>() {
+		list1
+		.stream()
+		.distinct()
+		.forEach(new Consumer<String>() {
 
 			public void accept(String name) {
 				System.out.print(name + " ");
 			}
 		});
 		
-		Consumer<String> printConsumer = new Consumer<String>() {
-		    public void accept(String name) {
-		        System.out.print(name+" ");
-		    };
-		};
 		
-		list1.stream().forEach(printConsumer);
-
-		System.out.println("\n.......................");
-
-		list1.forEach(new Consumer<String>() {
-
-			public void accept(String name) {
-				System.out.print(name + " ");
-			}
-		});
+//
+//		System.out.println("\n.......................");
+//
+//		list1.forEach(new Consumer<String>() {
+//
+//			public void accept(String name) {
+//				System.out.print(name + " ");
+//			}
+//		});
+//		
 		
-		System.out.println("\n.......................");
 		
+		
+//		Consumer<String> printConsumer = new Consumer<String>() 
+//		{
+//		    public void accept(String name) {
+//		        System.out.print(name+" ");
+//		    };
+//		};
+//		
+//		list1.forEach(printConsumer);
+//		
+//		System.out.println("\n.......................");
+//		list1
+//		.stream()
+//		.distinct()
+////		.filter(s-> s.length()>4)
+////		.filter(s-> s.startsWith("A"))
+//		.forEach(printConsumer);
+//
+//		System.out.println("\n.......................");
+//
+//		list1.forEach(new Consumer<String>() {
+//
+//			public void accept(String name) {
+//				System.out.print(name + " ");
+//			}
+//		});
+//		
+//		System.out.println("\n.......................");
+//		
 		
 
 		// System.out.println("\n.......................");
