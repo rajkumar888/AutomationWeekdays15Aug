@@ -41,7 +41,7 @@ public class VectorDemo {
 //		}
 //
 //		System.out.println("\n.........................");
-////
+//
 //		Enumeration<String> enumeration = vect.elements();
 //
 //		while (enumeration.hasMoreElements()) {

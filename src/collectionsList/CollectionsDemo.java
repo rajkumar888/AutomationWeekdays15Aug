@@ -7,17 +7,16 @@ public class CollectionsDemo {
 
 	public static void main(String[] args) {
 
-		ArrayList<String> arrlist = new ArrayList<String>();
-		arrlist.add("str5");
-		arrlist.add("str1");
-		arrlist.add("str2");
-		arrlist.add("str3");
-		arrlist.add("str4");
-		
-
-		System.out.println(arrlist);
-		Collections.reverse(arrlist);
-		System.out.println(arrlist);
+//		ArrayList<String> arrlist = new ArrayList<String>();
+//		arrlist.add("str5");
+//		arrlist.add("str1");
+//		arrlist.add("str2");
+//		arrlist.add("str3");
+//		arrlist.add("str4");
+//
+//		System.out.println(arrlist);
+//		Collections.reverse(arrlist);
+//		System.out.println(arrlist);
 
 		// Collections
 //		boolean b = Collections.addAll(arrlist,"abc2", "abc1", "abc3", "abc4", "abc5");
@@ -32,23 +31,21 @@ public class CollectionsDemo {
 //		
 //		System.out.println("==========================================");
 //
-//		ArrayList<Integer> arrlistInt = new ArrayList<Integer>();
-//		arrlistInt.add(330);
-//		arrlistInt.add(10);
-//		arrlistInt.add(20);
-//		arrlistInt.add(50);
-//		arrlistInt.add(70);
-//		
-//		
+		ArrayList<Integer> arrlistInt = new ArrayList<Integer>();
+		
+		arrlistInt.add(330);
+		arrlistInt.add(10);
+		arrlistInt.add(20);
+		arrlistInt.add(50);
+		arrlistInt.add(70);
+////		
+		System.out.println(arrlistInt);
 //		System.out.println("Max value is: " + Collections.max(arrlistInt));
 //		System.out.println("Min value is: " + Collections.min(arrlistInt));
-//		
+//		System.out.println("==========================================");
 //		System.out.println(arrlistInt);
-//		
 //		Collections.sort(arrlistInt);
-//		
 //		System.out.println(arrlistInt);
-//		
 //		Collections.reverse(arrlistInt);
 //		System.out.println(arrlistInt);
 //		System.out.println("==========================================");
@@ -59,12 +56,16 @@ public class CollectionsDemo {
 //		arrlistInt2.add(1);
 //		arrlistInt2.add(2);
 //		arrlistInt2.add(3);
-//		arrlistInt2.add(4);
+////		arrlistInt2.add(4);
 //		
 //		
 //		System.out.println(arrlistInt2);
 //		
-//		if(arrlistInt2.size()==arrlistInt.size()){
+////		Collections.copy(arrlistInt2, arrlistInt);
+////		
+////		System.out.println(arrlistInt2);
+////		
+//		if(arrlistInt2.size() >= arrlistInt.size()){
 //			Collections.copy(arrlistInt2, arrlistInt);
 //		}else
 //		{
@@ -83,12 +84,12 @@ public class CollectionsDemo {
 //		arrString.add("str5");
 //		
 //		if(arrString.size()==arrlistInt.size()){
-////			Collections.copy(arrString, arrlistInt);
+//			Collections.copy(arrString, arrlistInt);
 //		}else
 //		{
 //			System.out.println(" size is not matching for given arraylist....");
 //		}
-//		
+		
 	}
 
 }

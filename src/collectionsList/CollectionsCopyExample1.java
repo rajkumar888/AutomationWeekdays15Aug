@@ -20,12 +20,10 @@ public class CollectionsCopyExample1 {
 		
 		destlist.add("JavaTpoint");
 		destlist.add("is older than");
-		destlist.add("SSSIT");
-		
+		destlist.add("IT");
 		
 		// copy into destination list
 		Collections.copy(destlist, srclist);
-		
 		
 		System.out.println("Elements of source list: " + srclist);
 		System.out.println("Elements of destination list: " + destlist);
