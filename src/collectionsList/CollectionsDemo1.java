@@ -10,7 +10,6 @@ public class CollectionsDemo1 {
 
 		ArrayList<String> fruits = new ArrayList<String>();
 		
-		
 		Collections.addAll(fruits, "Apples", "Oranges", "Banana");
 		
 		Collections.addAll(fruits, "Grapes", "WaterMelon", "Kiwi");
@@ -18,13 +17,9 @@ public class CollectionsDemo1 {
 		
 		fruits.forEach(System.out::println);
 		
-//		
 //		Collections.sort(fruits);
-////		
 //		System.out.println(fruits);
-////		
 //		Collections.reverse(fruits);
-////		
 //		System.out.println(fruits);
 //		
 //		System.out.println(fruits);
@@ -33,8 +28,6 @@ public class CollectionsDemo1 {
 //		
 		Collections.fill(fruits, "Mango");
 		System.out.println(fruits);
-		
-		
 		
 	}
 

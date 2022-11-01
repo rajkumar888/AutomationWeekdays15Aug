@@ -1,4 +1,4 @@
-package com.setandmapdemo;
+package collectionsSetMapdemo;
 
 public class TestCondition {
 	

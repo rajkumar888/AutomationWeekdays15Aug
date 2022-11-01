@@ -1,4 +1,4 @@
-package com.setandmapdemo;
+package collectionsSetMapdemo;
 
 import java.util.Iterator;
 import java.util.TreeSet;
