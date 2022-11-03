@@ -3,12 +3,12 @@ package collectionsSetMapdemo;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Set_example_Integers {
+public class HashSetExample_Integers {
 	  
     public static void main(String[] args)
     {
         // Create a set
-        Set<Integer> set = new HashSet<Integer>();
+    	HashSet<Integer> set = new HashSet<Integer>();
   
         // Add some elements to the set
         set.add(1);

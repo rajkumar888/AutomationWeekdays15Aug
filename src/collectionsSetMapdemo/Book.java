@@ -1,9 +1,9 @@
 package collectionsSetMapdemo;
 
 public class Book {
-	int id;
+	
+	int id, quantity;
 	String name, author, publisher;
-	int quantity;
 
 	public int getId() {
 		return id;
@@ -34,12 +34,11 @@ public class Book {
 	}
 
 	public Book() {
-
 	}
 	
 	 public String toString()
 	    {
-	        return "[" + this.getId() + "=>" + this.getName()+ " "+this.getAuthor()+" "+this.getPublisher()+" "+this.getQuantity()+"]";
+	        return "[" + this.getId() + "=====>" + this.getName()+ " "+this.getAuthor()+" "+this.getPublisher()+" "+this.getQuantity()+"]";
 	    }
 
 }

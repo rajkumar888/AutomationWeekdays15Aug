@@ -21,18 +21,21 @@ public static void main(String[] args) {
     
     //Adding Books to HashSet  
     
-    
     set.add(b1);  
-    
     set.add(b2);  
-    
     set.add(b3);
-    
     set.add(b4);
     
     //Traversing HashSet  
-    for(Book b:set){  
-    System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);  
-    }  
+//    for(Book b: set){ 
+//    	
+//    System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);  
+//   
+//    }  
+    
+  for(Book b: set){ 
+	System.out.println(b);
+  }  
+    
 }  
 }  

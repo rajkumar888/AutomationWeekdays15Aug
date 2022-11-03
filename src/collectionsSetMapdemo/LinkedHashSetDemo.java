@@ -29,6 +29,10 @@ public class LinkedHashSetDemo {
 		
 		System.out.println(linkedhashsetexample);
 		
+		linkedhashsetexample.remove("One"); 
+		
+		System.out.println(linkedhashsetexample);
+		
 	}
 }
 		

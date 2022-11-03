@@ -1,4 +1,4 @@
-package collectionsSetMapdemo;
+package collectionsList;
 
 import java.util.ArrayList;
 
