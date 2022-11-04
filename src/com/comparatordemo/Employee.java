@@ -1,6 +1,9 @@
 package com.comparatordemo;
 
+import java.util.Comparator;
+
 public class Employee {
+	
 	private int empno;
 	private String name;
 	private int age;
@@ -27,24 +30,13 @@ public class Employee {
 	public Employee() {
 
 	}
-}
 
-//class AgeComparator implements Comparator<Employee> {
-//
-//	public int compare(Employee e1, Employee e2) {
-//		if (e1.age == e2.age)
-//			return 0;
-//		else if (e1.age > e2.age)
-//			return 1;
-//		else
-//			return -1;
-//	}
-//}
-//
-//
-//class NameComparator implements Comparator<Employee> {
-//
-//	public int compare(Employee e1, Employee e2) {
-//		return e1.name.compareTo(e2.name);
-//	}
-//}
+	@Override
+	public String toString() {
+		return "Employee....> [empno= " + empno + ", name= " + name + ", age= " + age + "]";
+	}
+	
+	
+	
+} // end of class Employee
+

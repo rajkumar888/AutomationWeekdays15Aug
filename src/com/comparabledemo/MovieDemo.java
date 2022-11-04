@@ -20,9 +20,14 @@ public class MovieDemo
  
         System.out.println("Movies after sorting : .......");
         
+//        for (Movie m: list)
+//        {
+//            System.out.println(m.getName() + " " + m.getRating() + " " + m.getYear());
+//        }
+        
         for (Movie m: list)
         {
-            System.out.println(m.getName() + " " + m.getRating() + " " + m.getYear());
+        	System.out.println(m);
         }
     }
 }

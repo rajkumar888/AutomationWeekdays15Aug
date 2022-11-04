@@ -5,24 +5,6 @@ public class Movie implements Comparable<Movie> {
 	private String name;
 	private int year;
 
-	// Used to sort movies by year
-//	public int compareTo(Movie m) {
-//		return  m.year -this.year;
-//	}
-
-	// public int compareTo(Movie m) {
-	// if (this.rating == m.rating)
-	// return 0;
-	// else if (this.rating > m.rating)
-	// return 1;
-	// else
-	// return -1;
-	// }
-
-	 public int compareTo(Movie m) {
-		 return this.name.compareTo(m.name);
-	 }
-
 	// Constructor
 	public Movie(String name, double rating, int year) {
 		this.name = name;
@@ -30,7 +12,25 @@ public class Movie implements Comparable<Movie> {
 		this.year = year;
 	}
 
-	// Getter methods for accessing private data
+	// default Constructor
+	public Movie() {
+	}
+
+	public int compareTo(Movie m) {
+		// return this.name.compareTo(m.name);
+		// return this.year- m.year;
+
+		if (this.rating == m.rating) {
+			return 0;
+		} else if (this.rating > m.rating) {
+			return 1;
+		} else {
+			return -1;
+		}
+	}
+
+	
+	// generated getter methods
 	public double getRating() {
 		return rating;
 	}
@@ -42,4 +42,12 @@ public class Movie implements Comparable<Movie> {
 	public int getYear() {
 		return year;
 	}
+
+	@Override
+	public String toString() {
+		return "Movie => [rating=>" + rating + ", name=>" + name + ", year=>" + year + "]";
+	}
+
+	
+
 }

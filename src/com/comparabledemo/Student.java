@@ -49,7 +49,7 @@ public class Student implements Comparable<Student> {
 	public int compareTo(Student st) {
 		if (this.marks == st.marks)
 			return 0;
-		else if (st.marks > this.marks)
+		else if (this.marks > st.marks)
 			return 1;
 		else
 			return -1;
