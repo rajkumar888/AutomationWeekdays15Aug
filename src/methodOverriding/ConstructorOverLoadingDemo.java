@@ -1,4 +1,4 @@
-package overloading;
+package methodOverriding;
 
 public class ConstructorOverLoadingDemo {
 	
