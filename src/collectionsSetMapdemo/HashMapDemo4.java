@@ -3,7 +3,7 @@ package collectionsSetMapdemo;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapExample { 
+public class HashMapDemo4 { 
 	
 public static void main(String[] args) {    
     //Creating map of Books   
@@ -24,13 +24,11 @@ public static void main(String[] args) {
     //Traversing map  
     for(Map.Entry<Integer, Book> entry:  map.entrySet()){    
     	
-        int key=entry.getKey(); 
-        
-        Book b=entry.getValue();
-        
-//        System.out.println(key+" Details:"); 
-        
-        System.out.println(key+", "+b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);   
+//    	System.out.println(entry.getKey()+" "+entry.getValue());	
+    	
+        System.out.println(entry.getKey()+", "+entry.getValue().getId()
+        		+"\t"+entry.getValue().getName()+"\t"+entry.getValue().getAuthor()+"\t"+entry.getValue().getQuantity()
+        		+"\t"+entry.getValue().getPublisher());   
     }    
 }    
 }    
