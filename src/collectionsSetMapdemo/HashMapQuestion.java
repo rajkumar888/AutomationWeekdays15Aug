@@ -38,9 +38,11 @@ public class HashMapQuestion {
 
 		for (Map.Entry<Character, Integer> m : map.entrySet()) {
 
-			if (m.getValue() > 1) {
-				System.out.println(m.getKey() + " " + m.getValue());
-			}
+//			if (m.getValue() > 1) {
+//				System.out.println(m.getKey() + " " + m.getValue());
+//			}
+		
+			
 		}
 
 	}

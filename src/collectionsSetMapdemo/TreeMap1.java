@@ -16,10 +16,10 @@ public class TreeMap1{
 	      map.put(99,"Rahul111");   
 	      map.put(999,null);
 	      map.put(8888,null);
-	      map.put(null,"xyz");   
+//	      map.put(null,"xyz");   // not allowed to have null key
 	      
 	      System.out.println(map);  
-	      
+	      System.out.println("=================================");
 	      System.out.println(map.descendingMap());  
 	      
 	 }  
