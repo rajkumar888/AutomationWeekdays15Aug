@@ -10,12 +10,14 @@ public class TreeMapDemo123 {
 		numbers.put("Third", 3);
         numbers.put("First", 1);
         numbers.put("Second", 2);
-        
+        numbers.put("TreeMap", 2);
+        numbers.put("Abcde", 2);
+        numbers.put("Qwerty", null);
         
         System.out.println("TreeMap: " + numbers);
-
-        System.out.println("First Key: " + numbers.firstKey());
-        System.out.println("Last Entry: " + numbers.lastEntry());
+//
+//        System.out.println("First Key: " + numbers.firstKey());
+//        System.out.println("Last Entry: " + numbers.lastEntry());
         
         
 ////
