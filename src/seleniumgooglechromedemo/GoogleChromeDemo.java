@@ -1,4 +1,4 @@
-package googlechrome;
+package seleniumgooglechromedemo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +22,7 @@ public class GoogleChromeDemo {
 		
 		Thread.sleep(5000);
 		
-		driver.quit();
+//		driver.quit();
 
 	}
 

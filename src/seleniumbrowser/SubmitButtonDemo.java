@@ -1,4 +1,4 @@
-package com.demo.seleniumbrowser;
+package seleniumbrowser;
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class IsEnabledDemo {
+public class SubmitButtonDemo {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -20,14 +20,14 @@ public class IsEnabledDemo {
 
 		
 		WebElement  trackButton = driver.findElement(By.xpath("//input[@value='Track']"));
+		trackButton.submit();
 		
-		System.out.println(trackButton.isDisplayed());
-		System.out.println(trackButton.isEnabled());
+		String urlnew=driver.getCurrentUrl();
+		String expectedurl="https://www.firstflight.com.sg/track-your-awbs/";
 		
+		System.out.println(expectedurl.equals(urlnew)+"...................");
 		
-		
-		
-		
+		Thread.sleep(5000);
 		driver.quit();
 		System.out.println("End of program......................." + new Date());
 	}

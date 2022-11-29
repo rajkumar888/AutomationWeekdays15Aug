@@ -1,4 +1,4 @@
-package com.demo.seleniumbrowser;
+package seleniumbrowser;
 
 import java.time.Duration;
 import java.util.Date;
