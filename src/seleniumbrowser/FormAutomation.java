@@ -1,5 +1,6 @@
 package seleniumbrowser;
 
+import java.io.IOException;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -9,15 +10,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FormAutomation {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
-		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.out.println("Begining of program......................."+new Date());
+		Runtime.getRuntime().exec("taskkill /IM chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver=new ChromeDriver();
+		
 		driver.manage().window().maximize();
-		String url = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
+		
+		String url = "https://www.facebook.com/";
 		driver.get(url);
 		
 		
@@ -26,16 +30,26 @@ public class FormAutomation {
 		email.clear();
 		email.sendKeys("abcde@gamil.com");
 		
-		WebElement password = driver.findElement(By.name("passwd"));
 		
+		WebElement password = driver.findElement(By.name("pass"));
+//		
 		password.clear();
 		password.sendKeys("helloWorld!@#");
-
-		WebElement signInButton = driver.findElement(By.name("SubmitLogin"));
 		
-		signInButton.click();
+//		Thread.sleep(5000);
+//		email.clear();
+//		password.clear();
+//
+		WebElement LoginButton = driver.findElement(By.name("login"));
+		
+		LoginButton.click();
 		
 		Thread.sleep(5000);
+		
+		System.out.println("The Page url is : "+driver.getCurrentUrl());
+		System.out.println("The Page Title is : "+driver.getTitle());
+		Thread.sleep(5000);
+//		System.out.println("The Page source is : "+driver.getPageSource());
 		
 		driver.quit();
 		System.out.println("End of program......................." + new Date());

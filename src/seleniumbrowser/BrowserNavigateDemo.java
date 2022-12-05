@@ -25,6 +25,7 @@ public class BrowserNavigateDemo {
 		driver.navigate().to(url);
 		
 //		driver.get(url);
+		
 		Thread.sleep(5000);
 		
 		driver.navigate().refresh();
