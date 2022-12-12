@@ -1,5 +1,6 @@
 package seleniumbrowser;
 
+import java.io.IOException;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -9,11 +10,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CSSSelectorLocatorDemo {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /IM chromedriver");
+
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
 		String url = "https://www.firstflight.com.sg/";
 		driver.get(url);
@@ -23,6 +28,7 @@ public class CSSSelectorLocatorDemo {
 //		WebElement  textareaTrack = driver.findElement(By.cssSelector(".t-area"));
 //		WebElement  textareaTrack = driver.findElement(By.cssSelector("textarea[id='track_awbs']"));
 //		WebElement  textareaTrack = driver.findElement(By.cssSelector("[id='track_awbs']"));
+//		WebElement  textareaTrack = driver.findElement(By.cssSelector("textarea[id='track_awbs'][name='AWB']"));
 //		WebElement  textareaTrack = driver.findElement(By.cssSelector("textarea[id='track_awbs'],[name='AWB']"));
 //		WebElement  textareaTrack = driver.findElement(By.cssSelector("textarea[id^='track']"));
 //		WebElement  textareaTrack = driver.findElement(By.cssSelector("textarea[id$='awbs']"));

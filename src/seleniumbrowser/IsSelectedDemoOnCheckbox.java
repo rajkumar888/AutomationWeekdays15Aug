@@ -1,5 +1,6 @@
 package seleniumbrowser;
 
+import java.io.IOException;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -7,29 +8,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class IsSelectedDemo {
+public class IsSelectedDemoOnCheckbox {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /IM chromedriver");
+
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
+
 		String url = "http://demo.guru99.com/test/radio.html";
 		driver.get(url);
 
 		
-		WebElement  radioOption2 = driver.findElement(By.xpath("//input[@value='Option 2']"));
+		WebElement checkbox3 = driver.findElement(By.xpath("//input[@value='checkbox3']"));
 		
 		System.out.println("........................Before clicking");
-		System.out.println(radioOption2.isDisplayed());
-		System.out.println(radioOption2.isEnabled());
-		System.out.println(radioOption2.isSelected());
-		radioOption2.click();
+		System.out.println(checkbox3.isDisplayed());
+		System.out.println(checkbox3.isEnabled());
+		System.out.println(checkbox3.isSelected());
+		
+		Thread.sleep(5000);
+		checkbox3.click();
 		System.out.println("........................After clicking");
-		System.out.println(radioOption2.isDisplayed());
-		System.out.println(radioOption2.isEnabled());
-		System.out.println(radioOption2.isSelected());
+		System.out.println(checkbox3.isDisplayed());
+		System.out.println(checkbox3.isEnabled());
+		System.out.println(checkbox3.isSelected());
 		
 		
 		Thread.sleep(5000);
