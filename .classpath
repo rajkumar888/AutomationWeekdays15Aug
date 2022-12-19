@@ -35,7 +35,7 @@
 	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/selenium-remote-driver-4.2.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/selenium-safari-driver-4.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/selenium-safari-driver-4.2.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/selenium-support-4.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/selenium-support-4.2.0.jar" sourcepath="C:/Tools/selenium-java-4.2.0/selenium-support-4.2.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/selenium-support-4.2.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/lib/async-http-client-2.12.3.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/selenium-java-4.2.0/lib/async-http-client-netty-utils-2.12.3.jar"/>
