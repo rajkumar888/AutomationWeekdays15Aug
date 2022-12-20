@@ -1,5 +1,6 @@
-package com.seleniumdemo.day2;
+package seleniumdemoImplicityAndExplicitWait;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 
@@ -9,13 +10,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ImplicitWaitDemo2 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /IM chromedriver");
+
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
-		String url = "https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+		
+		
+		String url = "https://accounts.google.com/";
 		driver.get(url);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -24,9 +31,12 @@ public class ImplicitWaitDemo2 {
 		
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		
-		driver.findElement(By.xpath("//span[text()='Try again']")).click();
+		driver.findElement(By.xpath("//a[@aria-label='Try again']")).click();
 		
 		
+//		driver.findElement(By.xpath("//input[@name='Passwd']")).sendKeys("rajkumar888");
+//		
+//		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		
 		Thread.sleep(5000);
 		driver.quit();

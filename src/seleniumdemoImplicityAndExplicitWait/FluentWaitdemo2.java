@@ -1,4 +1,4 @@
-package com.seleniumdemo.day3;
+package seleniumdemoImplicityAndExplicitWait;
 
 import java.time.Duration;
 import java.util.Date;
@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 
-public class FluentWaitdemo {
+public class FluentWaitdemo2 {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -23,47 +23,32 @@ public class FluentWaitdemo {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+		driver.get("http://softwaretestingplace.blogspot.com/2017/02/selenium-fluent-wait.html");
+		driver.findElement(By.xpath("//*[@id='post-body-5280210221385817166']/div[1]/button")).click();
 		
-		driver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(1));
-
-		String url = "https://www.happiness.com/";
-
-		driver.get(url);
-
-		// driver.findElement(By.name("regEmail")).sendKeys("warren");
-		// driver.findElement(By.name("regPassword1")).sendKeys("warren");
-		// driver.findElement(By.className("btn-success")).click();
-
-		// WebDriverWait wait = new WebDriverWait(driver,
-		// Duration.ofSeconds(20));
-		// WebElement nameElement =
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("regEmail")));
-
-		// nameElement.sendKeys("warren");
-
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(Duration.ofSeconds(30))
 				.pollingEvery(Duration.ofMillis(100))
-				.ignoring(NoSuchElementException.class)
 				.ignoring(TimeoutException.class)
+				.ignoring(NoSuchElementException.class)
 				.ignoring(RuntimeException.class);
-
-		WebElement nameElementdemo = wait
-				.until(new Function<WebDriver, WebElement>() 
-				{
-			public WebElement apply(WebDriver driver) 
-			{
-				return driver.findElement(By.name("regEmail"));
-			}
+		 
+		WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+		
+			public WebElement apply(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id='myAnchor']"));
 		}
-				);
-
-		nameElementdemo.sendKeys("warren");
+		});
+		
+		String getTextOnPage = element.getText();
+		
+		System.out.println(getTextOnPage+".......................");
 
 		Thread.sleep(5000);
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		driver.quit();
+//		driver.quit();
 		System.out.println("End of program......................." + new Date());
 	}
 

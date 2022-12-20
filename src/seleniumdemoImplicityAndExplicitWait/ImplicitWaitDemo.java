@@ -1,4 +1,4 @@
-package com.seleniumdemo.day2;
+package seleniumdemoImplicityAndExplicitWait;
 
 import java.time.Duration;
 import java.util.Date;

@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class SelectClassDemo {
+public class DropdownSelectClassDemo {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
@@ -62,25 +62,26 @@ public class SelectClassDemo {
 //		month.selectByVisibleText("Mar");
 //		Thread.sleep(2000);
 //		month.selectByVisibleText("Nov");	
-//		
+		
 		month.selectByValue("1");
 		Thread.sleep(2000);
 		month.selectByValue("12");
-//		
-//		
+		Thread.sleep(2000);
+		
 		WebElement eleyear = driver.findElement(By.cssSelector("#year"));
 		
 		Select year= new Select(eleyear);
 		
 //		year.selectByVisibleText("2001");
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		
 		year.selectByVisibleText("1999");
 		Thread.sleep(2000);
+		
 		year.selectByIndex(0);
 		Thread.sleep(2000);
-		year.selectByIndex(year.getOptions().size()-1);
 		
+		year.selectByIndex(year.getOptions().size()-1);
 		
 		Thread.sleep(5000);
 		driver.quit();
