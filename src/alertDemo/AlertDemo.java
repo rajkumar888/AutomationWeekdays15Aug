@@ -15,7 +15,7 @@ public class AlertDemo {
 
 		System.out.println("Begining of program......................." + new Date());
 		Runtime.getRuntime().exec("taskkill /F /T /IM chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -27,30 +27,24 @@ public class AlertDemo {
 		driver.findElement(By.name("cusid")).sendKeys("1111");
 		driver.findElement(By.name("submit")).submit();
 
-		
-		if(driver.switchTo().alert()!=null){
+		if (driver.switchTo().alert() != null) {
 			// Switching to Alert
 			Alert alert = driver.switchTo().alert();
-			
+
 			// Capturing alert message.
 			String alertMessage = alert.getText();
 
 			// Displaying alert message
-			System.out.println(alertMessage+"................................");
-			
+			System.out.println(alertMessage + "................................");
+
 			Thread.sleep(5000);
 
 			// clicking on ok button on alert
-//			alert.accept();
-			
-			alert.dismiss();
+			alert.accept();
+
+//			alert.dismiss();
 
 		}
-		
-		
-		
-
-
 
 		Thread.sleep(5000);
 		System.out.println("=============================================");

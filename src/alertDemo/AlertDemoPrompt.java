@@ -6,6 +6,7 @@ import java.util.Date;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,7 +16,7 @@ public class AlertDemoPrompt {
 	public static void main(String[] args) throws InterruptedException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -31,7 +32,7 @@ public class AlertDemoPrompt {
 									.until(ExpectedConditions.alertIsPresent());
 		
 		promptAlert.sendKeys("Accepting the alert");
-		Thread.sleep(15000);
+		Thread.sleep(5000);
 		promptAlert.accept();
 		
 //		Alert alert = driver.switchTo().alert();
@@ -43,11 +44,11 @@ public class AlertDemoPrompt {
 //			alert.accept();
 //		}
 //
-//		WebElement textele = driver.findElement(By.xpath("//span[contains(.,'You entered') and contains(.,'Test User')]"));
-//
-//		System.out.println(textele.isDisplayed());
+		WebElement textele = driver.findElement(By.xpath("//span[contains(.,'You entered') or contains(.,'Test User')]"));
+
+		System.out.println(textele.isDisplayed());
 		
-		Thread.sleep(15000);
+		Thread.sleep(5000);
 		System.out.println("=============================================");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());

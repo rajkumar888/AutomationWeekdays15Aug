@@ -1,5 +1,6 @@
 package seleniumdemoImplicityAndExplicitWait;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 import java.util.NoSuchElementException;
@@ -14,17 +15,21 @@ import org.openqa.selenium.support.ui.FluentWait;
 
 public class FluentWaitdemo {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /IM chromedriver");
+
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
+		
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		driver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(1));
 
 		String url = "https://www.happiness.com/";
 
