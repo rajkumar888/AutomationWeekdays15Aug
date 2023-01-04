@@ -2,6 +2,7 @@ package alertDemo;
 
 import java.time.Duration;
 import java.util.Date;
+import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +14,7 @@ public class MultipleWindowsDemo3 {
 	public static void main(String[] args) throws InterruptedException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		
 		
 		ChromeOptions options = new ChromeOptions();
@@ -34,12 +35,14 @@ public class MultipleWindowsDemo3 {
 		 String setofwidnows = driver.getWindowHandle();
 		System.out.println(setofwidnows);
 		
+		Set<String> setofwidnowsset = driver.getWindowHandles();
+		System.out.println(setofwidnowsset.size());
 		
 		Thread.sleep(5000);
 		System.out.println("=============================================");
 //		System.out.println(driver.getTitle());
 //		System.out.println(driver.getCurrentUrl());
-//		driver.quit();
+		driver.quit();
 		System.out.println("End of program......................." + new Date());
 	}
 

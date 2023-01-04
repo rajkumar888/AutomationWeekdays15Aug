@@ -1,5 +1,6 @@
 package alertDemo;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Iterator;
@@ -11,10 +12,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MultipleWindowsDemo2 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /F /T /IM chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -48,16 +50,17 @@ public class MultipleWindowsDemo2 {
 		while (iter.hasNext()) {
 			String winid = iter.next();
 			driver.switchTo().window(winid);
-			System.out.println(driver.getTitle());
-			System.out.println(driver.getCurrentUrl());
+//			System.out.println(driver.getTitle());
+//			System.out.println(driver.getCurrentUrl());
 			System.out.println(winid);
+			System.out.println(setofwidnows.size());
 		}
 
 		Thread.sleep(5000);
 		System.out.println("=============================================");
 		// System.out.println(driver.getTitle());
 		// System.out.println(driver.getCurrentUrl());
-		// driver.quit();
+		 driver.quit();
 		System.out.println("End of program......................." + new Date());
 	}
 
