@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class MultipleWindowsDemo3 {
+public class MultipleWindowsNaukri {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -24,15 +24,16 @@ public class MultipleWindowsDemo3 {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		
-		WebDriver driver = new ChromeDriver(capabilities);
+		
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		String url = "https://www.naukri.com/";
 		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		 String setofwidnows = driver.getWindowHandle();
+		String setofwidnows = driver.getWindowHandle();
 		System.out.println(setofwidnows);
 		
 		Set<String> setofwidnowsset = driver.getWindowHandles();
@@ -40,8 +41,8 @@ public class MultipleWindowsDemo3 {
 		
 		Thread.sleep(5000);
 		System.out.println("=============================================");
-//		System.out.println(driver.getTitle());
-//		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
 		driver.quit();
 		System.out.println("End of program......................." + new Date());
 	}
