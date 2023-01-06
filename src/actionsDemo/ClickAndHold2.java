@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ClickAndHold {
+public class ClickAndHold2 {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -19,24 +19,17 @@ public class ClickAndHold {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		String url = "https://selenium08.blogspot.com/2020/01/click-and-hold.html";
+		String url = "https://www.selenium.dev/selenium/web/mouse_interaction.html";
 		driver.get(url);
 		Actions actions = new Actions(driver);
 
-		// Locate the element C by By.xpath.
-		WebElement titleA = driver.findElement(By.xpath("//li[text()= 'A']"));
-		WebElement titleG = driver.findElement(By.xpath("//li[text()= 'G']"));
-		WebElement titleC = driver.findElement(By.xpath("//li[text()= 'C']"));
-
-		// Call clickAndHold() method to perform click and hold operation on
-		// element C.
-		actions
-		.clickAndHold(titleA)
-		.moveToElement(titleC)
-		.pause(Duration.ofSeconds(2))
-		.perform();
+		WebElement draggable = driver.findElement(By.id("draggable"));
+		WebElement droppable = driver.findElement(By.id("droppable"));
+		
 		
 		actions
+		.clickAndHold(draggable)
+		.moveToElement(droppable)
 		.pause(Duration.ofSeconds(2))
 		.release()
 		.perform();

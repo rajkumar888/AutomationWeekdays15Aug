@@ -13,12 +13,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionsDemoRightClickFireFox {
+public class ActionsDemoRightClickChrome {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "./BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -44,7 +44,6 @@ public class ActionsDemoRightClickFireFox {
 				.pause(Duration.ofSeconds(2))
 				.contextClick(txtUsername)
 				.pause(Duration.ofSeconds(2))
-				.build()
 				.perform();
 		
 		

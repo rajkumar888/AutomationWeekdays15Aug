@@ -13,7 +13,7 @@ public class HomeAndEndKeyDemo {
 	public static void main(String[] args) throws InterruptedException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));

@@ -34,77 +34,39 @@ public class ActionsDemoControlClick {
 		WebElement marketplaceLink = driver.findElement(By.linkText("Marketplace"));
 		WebElement careers = driver.findElement(By.linkText("Careers"));
 
-		actions.keyDown(Keys.CONTROL).click(forgottenpasswordLink).pause(Duration.ofSeconds(2)).click(marketplaceLink)
-				.keyUp(Keys.CONTROL).pause(Duration.ofSeconds(2))
-				.keyDown(Keys.SHIFT).click(careers).pause(Duration.ofSeconds(2))
+		actions.keyDown(Keys.CONTROL)
+		.click(forgottenpasswordLink)
+		.pause(Duration.ofSeconds(2))
+		.click(marketplaceLink)
+		.keyUp(Keys.CONTROL)
+				.pause(Duration.ofSeconds(2))
+				.keyDown(Keys.SHIFT)
+				.click(careers)
+				.pause(Duration.ofSeconds(2))
 				.keyUp(Keys.SHIFT)
 				.perform();
 
+		Thread.sleep(5000);
 		Set<String> openwindowsids = driver.getWindowHandles();
 
 		System.out.println("count of open widnows " + openwindowsids.size());
 
 		for (String winid : openwindowsids) {
+			
 			if (!winid.equals(mainwindowid)) {
+			
 				driver.switchTo().window(winid);
 				System.out.println(driver.getTitle());
 				System.out.println(driver.getCurrentUrl());
 				driver.close();
 			}
+			
 			System.out.println("=============================================");
 			openwindowsids = driver.getWindowHandles();
 			System.out.println("count of open widnows " + openwindowsids.size());
 		}
 
-//		WebElement txtUsername = driver.findElement(By.id("email"));
-//
-//		actions
-//		.moveToElement(txtUsername)
-//		.pause(Duration.ofSeconds(2))
-//		.click()
-//		.pause(Duration.ofSeconds(2))
-//				.keyDown(txtUsername, Keys.SHIFT)
-//				.pause(Duration.ofSeconds(2))
-//				.sendKeys(txtUsername, "hello world demo")
-//				.pause(Duration.ofSeconds(2))
-//				.keyUp(txtUsername, Keys.SHIFT)
-//				.pause(Duration.ofSeconds(2))
-//				.sendKeys(txtUsername, Keys.END,"world")
-//				.doubleClick(txtUsername)
-//				.pause(Duration.ofSeconds(2))
-//				.sendKeys(Keys.BACK_SPACE)
-////				.contextClick()
-////				.pause(Duration.ofSeconds(2))
-////				.sendKeys(Keys.ESCAPE)
-////				.pause(Duration.ofSeconds(5))
-////				.build()
-//				.perform();
 
-//		
-
-//	
-
-//		actions
-//		.keyDown(Keys.SHIFT)
-//		.click(forgottenpasswordLink)
-//		.pause(Duration.ofSeconds(2))
-//		.click(marketplaceLink)
-//		.keyUp(Keys.SHIFT)
-//		.build().perform();
-//
-//		Set<String> allwinIds = driver.getWindowHandles();
-//		System.out.println(allwinIds.size());
-//
-//		for (String id : allwinIds) {
-//			driver.switchTo().window(id);
-//
-//			System.out.println(driver.getTitle());
-//			System.out.println(driver.getCurrentUrl());
-//			Thread.sleep(2000);
-//			System.out.println();
-//		}
-
-		Thread.sleep(5000);
 		System.out.println("=============================================");
 		// System.out.println(driver.getTitle());
 		// System.out.println(driver.getCurrentUrl());
@@ -112,4 +74,4 @@ public class ActionsDemoControlClick {
 		System.out.println("End of program......................." + new Date());
 
 	}
-}
+	}
