@@ -14,7 +14,7 @@ public class JSEDemo {
 
 		System.out.println("Begining of program......................." + new Date());
 
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -26,10 +26,13 @@ public class JSEDemo {
 		long start_time = System.currentTimeMillis();
 
 		// Call executeAsyncScript() method to wait for 5 seconds
-		((JavascriptExecutor) driver).executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 5000);");
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 10000);");
 
 		// Get the difference (currentTime - startTime) of times.
-		System.out.println("Passed time: " + (System.currentTimeMillis() - start_time));
+		System.out.println("Passed time: " + (System.currentTimeMillis() - start_time)/1000 + " Seconds");
 
 		Thread.sleep(5000);
 		System.out.println("=============================================");

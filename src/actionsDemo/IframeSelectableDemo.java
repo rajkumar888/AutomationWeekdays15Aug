@@ -1,5 +1,6 @@
 package actionsDemo;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
@@ -12,12 +13,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SelectableDemo {
+public class IframeSelectableDemo {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /F /T /IM chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -35,16 +37,31 @@ public class SelectableDemo {
 		List<WebElement> allItems = driver.findElements(By.xpath("//li[contains(text(),'Item')]"));
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
 		js.executeScript("arguments[0].scrollIntoView(true);", allItems.get(0));
 
-		for (int i = 0; i < allItems.size(); i++) {
+		for (int i = 0; i < allItems.size(); i=i+2) {
 			actions.keyDown(Keys.CONTROL)
 			.click(allItems.get(i))
 			.pause(Duration.ofSeconds(2))
 			.perform();
 		}
+		
 		actions.keyUp(Keys.CONTROL).build().perform();
+		
+//		Thread.sleep(5000);
+//		for (int i = 0; i < allItems.size(); i++) {
+//			actions.keyDown(Keys.CONTROL)
+//			.click(allItems.get(i))
+//			.pause(Duration.ofSeconds(2))
+//			.perform();
+//		}
+		
+		actions.keyUp(Keys.CONTROL).build().perform();
+		
 		driver.switchTo().defaultContent();
+		
+		
 
 		Thread.sleep(5000);
 		System.out.println("=============================================");

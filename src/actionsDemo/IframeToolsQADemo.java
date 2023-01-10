@@ -3,13 +3,17 @@ package actionsDemo;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
-public class IframeDemo {
+public class IframeToolsQADemo {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
@@ -20,25 +24,24 @@ public class IframeDemo {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		
-		String url="http://demo.guru99.com/test/guru99home/";
+		String url = "https://demoqa.com/frames";
 		driver.get(url);
 		
 		
-//		 driver.switchTo().frame("a077aa5e");
+		driver.switchTo().frame("frame1");
 		
-//		driver.switchTo().frame(3);
-		 
-//		 WebElement frameEle = driver.findElement(By.xpath("//iframe[@id='a077aa5e']"));
-//		 driver.switchTo().frame(frameEle);
+//		driver.switchTo().frame(0);
 		
-//		 System.out.println("********We have switched to the iframe*******");
+//		WebElement frameElement = driver.findElement(By.id("frame1"));
+//		driver.switchTo().frame(frameElement);
 		
 		
-		 driver.findElement(By.xpath("//img[@src='Jmeter720.png']")).click();
-		 
-		 
-		 driver.switchTo().defaultContent();
+		WebElement header = driver.findElement(By.xpath("//h1[@id='sampleHeading']"));
+		
+		System.out.println(header.getText()+"------------------------------");
+		
+		driver.switchTo().defaultContent();
+		
 		
 
 		Thread.sleep(5000);
@@ -47,6 +50,8 @@ public class IframeDemo {
 		System.out.println(driver.getCurrentUrl());
 		driver.quit();
 		System.out.println("End of program......................." + new Date());
+
+		
 	}
 
 }
