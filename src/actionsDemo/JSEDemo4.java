@@ -15,31 +15,35 @@ public class JSEDemo4 {
 	public static void main(String[] args) throws InterruptedException, IOException {
 
 		System.out.println("Begining of program......................." + new Date());
-				
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		Runtime.getRuntime().exec("taskkill /F /T /IM chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		
 		String url = "http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html";
 		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		
-		WebElement ele = driver.findElement(By.xpath("//a[text()='MIT License']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView(true);",ele);
+		WebElement eleLicense = driver.findElement(By.xpath("//a[text()='MIT License']"));
 		
+		js.executeScript("arguments[0].scrollIntoView(true);",eleLicense);
+		Thread.sleep(5000);
+		js.executeScript("arguments[0].click();", eleLicense);
+		
+		Thread.sleep(5000);
+		//page refresh
 		js.executeScript("history.go(0)");
-		System.out.println(js.executeScript("return document.title;").toString());
-		
+		System.out.println(js.executeScript("return document.title;").toString()+"=======");
+		System.out.println(driver.getTitle()+"-----------------------");
+//		
 		
 		Thread.sleep(5000);
 		System.out.println("=============================================");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-//		driver.quit();
-//		Runtime.getRuntime().exec("taskkill /F /T /IM chromedriver.exe");
-//		Runtime.getRuntime().exec("notepad.exe");
+		driver.quit();
 		System.out.println("End of program......................." + new Date());
 	}
 

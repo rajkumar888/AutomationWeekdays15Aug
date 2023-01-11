@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class JSEDemo5 {
+public class JSEDemo6Facebook {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
@@ -21,7 +21,7 @@ public class JSEDemo5 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		
-		String url = "https://www.softwaretestingmaterial.com/javascriptexecutor-selenium-webdriver/#h-scenario-9-to-get-the-url-of-a-webpage";
+		String url = "https://www.facebook.com/";
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		
@@ -31,14 +31,11 @@ public class JSEDemo5 {
 		System.out.println(js.executeScript("return document.title;").toString());
 		System.out.println(js.executeScript("return document.URL;").toString());
 		
-		WebElement allowbutton = driver.findElement(By.xpath("//button[text()='Allow']"));
-		
-		js.executeScript("arguments[0].click();", allowbutton);
 		Thread.sleep(5000);
 		
-		WebElement emailfield = driver.findElement(By.xpath("//input[@id='Email']"));
+		WebElement emailfield = driver.findElement(By.xpath("//input[@id='email']"));
 		js.executeScript("arguments[0].scrollIntoView(true);",emailfield);
-		js.executeScript("document.getElementById('Email').value='SoftwareTestingMaterial.com';");
+		js.executeScript("document.getElementById('email').value='SoftwareTestingMaterial@gmail.com';");
 		
 		
 		Thread.sleep(5000);
@@ -47,7 +44,6 @@ public class JSEDemo5 {
 //		System.out.println(driver.getCurrentUrl());
 //		driver.quit();
 //		
-//		Runtime.getRuntime().exec("notepad.exe");
 		System.out.println("End of program......................." + new Date());
 	}
 
