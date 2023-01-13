@@ -16,14 +16,13 @@ public class BrowserZoomInZoomOut2 {
 	public static void main(String[] args) throws InterruptedException, IOException, AWTException {
 		System.out.print("Start of the Program.........." + new Date());
 		Runtime.getRuntime().exec("taskkill /F /T /IM chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
 		String url = "https://www.selenium.dev/";
 		driver.get(url);
-		Actions actions = new Actions(driver);
-		WebElement element = driver.findElement(By.cssSelector("body"));
+//		WebElement element = driver.findElement(By.cssSelector("body"));
 
 		Robot robot = new Robot();
 
@@ -34,7 +33,9 @@ public class BrowserZoomInZoomOut2 {
 			robot.keyRelease(KeyEvent.VK_MINUS);
 			Thread.sleep(1000);
 		}
+		
 		Thread.sleep(5000);
+		
 		for (int i = 0; i < 5; i++) {
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_EQUALS);
@@ -43,9 +44,8 @@ public class BrowserZoomInZoomOut2 {
 			Thread.sleep(1000);
 		}
 
-		// Thread.sleep(5000);
-		// driver.close();
-		// driver.quit();
+		 Thread.sleep(5000);
+		 driver.quit();
 		System.out.print("End of the Program.........." + new Date());
 	}
 }
