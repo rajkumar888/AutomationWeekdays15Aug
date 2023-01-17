@@ -1,4 +1,4 @@
-package com.testngdemo;
+package testngdemo;
 
 import java.util.Date;
 

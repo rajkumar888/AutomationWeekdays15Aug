@@ -1,4 +1,4 @@
-package com.testngdemo;
+package testngdemo;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
