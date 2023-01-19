@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8" started-at="2023-01-18T23:32:53 SGT" finished-at="2023-01-18T23:32:53 SGT">
+  <suite name="Failed suite [Suite_Demo]" duration-ms="1061" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:20 SGT">
     <groups>
+      <group name="sanity">
+        <method signature="TestNGDemo.testcase004()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase004" class="testngdemo.TestNGDemo"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="8" started-at="2023-01-18T23:32:53 SGT" finished-at="2023-01-18T23:32:53 SGT">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="Test_Demo1(failed)" duration-ms="1061" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:20 SGT">
+      <class name="testngdemo.TestNGDemo">
+        <test-method status="PASS" signature="initsuite()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initsuite" is-config="true" duration-ms="7" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsuite -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initTest" is-config="true" duration-ms="1" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="initClass()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initClass" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initClass -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="testcase004()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase004" duration-ms="1020" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:20 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase004 -->
+        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="2" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearMethod -->
+        <test-method status="PASS" signature="tearClass()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearClass" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearClass -->
+        <test-method status="PASS" signature="tearTest()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearTest" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method status="PASS" signature="tearsuite()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearsuite" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearsuite -->
+      </class> <!-- testngdemo.TestNGDemo -->
+    </test> <!-- Test_Demo1(failed) -->
+  </suite> <!-- Failed suite [Suite_Demo] -->
 </testng-results>

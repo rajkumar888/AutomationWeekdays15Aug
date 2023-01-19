@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_Demo]">
-  <test thread-count="5" name="Test_Demo2(failed)">
+  <test thread-count="5" name="Test_Demo1(failed)">
     <classes>
-      <class name="testngdemo.TestNGDemoEnable">
+      <class name="testngdemo.TestNGDemo">
         <methods>
-          <include name="testcase0022222"/>
+          <include name="tearsuite"/>
+          <include name="initMethod"/>
+          <include name="initsuite"/>
+          <include name="initTest"/>
+          <include name="testcase004"/>
+          <include name="tearTest"/>
+          <include name="tearClass"/>
+          <include name="tearMethod"/>
+          <include name="initClass"/>
         </methods>
-      </class> <!-- testngdemo.TestNGDemoEnable -->
+      </class> <!-- testngdemo.TestNGDemo -->
     </classes>
-  </test> <!-- Test_Demo2(failed) -->
+  </test> <!-- Test_Demo1(failed) -->
 </suite> <!-- Failed suite [Suite_Demo] -->

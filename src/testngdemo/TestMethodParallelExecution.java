@@ -24,13 +24,13 @@ public void setUp(String browser) throws Exception {
 	if(browser.equalsIgnoreCase("chrome"))
 	{
 		System.out.println("Current Date and time is "+new Date()+" for browser name "+browser);
-		System.setProperty("webdriver.chrome.driver", "D:/Project/BrowserDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}else if(browser.equalsIgnoreCase("firefox"))
 	{
 		System.out.println("Current Date and time is "+new Date()+" for browser name "+browser);
-		System.setProperty("webdriver.gecko.driver", "D:/Project/BrowserDriver/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "./Driver/geckodriver.exe");
 		driver = new FirefoxDriver();
 	}else if(browser.equalsIgnoreCase("ie"))
 	{

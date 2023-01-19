@@ -11,9 +11,5 @@ public class TestParallel {
 		System.out.println("welcome to testng3...."+new Date());
 		Thread.sleep(1000);
 	}
-
-	
-	
-
 	
 }
