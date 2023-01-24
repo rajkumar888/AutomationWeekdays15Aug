@@ -1,52 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Suite_Demo]" duration-ms="1061" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:20 SGT">
+  <suite name="Default suite" duration-ms="4139" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:26 SGT">
     <groups>
+      <group name="smoke">
+        <method signature="TestNGDemo.testcase001()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase001" class="testngdemo.TestNGDemo"/>
+        <method signature="TestNGDemo.testcase002()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase002" class="testngdemo.TestNGDemo"/>
+        <method signature="TestNGDemo.testcase005()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase005" class="testngdemo.TestNGDemo"/>
+      </group> <!-- smoke -->
       <group name="sanity">
+        <method signature="TestNGDemo.testcase003()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase003" class="testngdemo.TestNGDemo"/>
         <method signature="TestNGDemo.testcase004()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase004" class="testngdemo.TestNGDemo"/>
+        <method signature="TestNGDemo.testcase005()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase005" class="testngdemo.TestNGDemo"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Test_Demo1(failed)" duration-ms="1061" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:20 SGT">
+    <test name="Default test" duration-ms="4139" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:26 SGT">
       <class name="testngdemo.TestNGDemo">
-        <test-method status="PASS" signature="initsuite()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initsuite" is-config="true" duration-ms="7" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+        <test-method status="PASS" signature="initsuite()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initsuite" is-config="true" duration-ms="8" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initsuite -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initTest" is-config="true" duration-ms="1" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initTest" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="initClass()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initClass" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+        <test-method status="PASS" signature="initClass()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initClass" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initClass -->
-        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:19 SGT">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method status="PASS" signature="testcase004()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase004" duration-ms="1020" started-at="2023-01-19T23:31:19 SGT" finished-at="2023-01-19T23:31:20 SGT">
+        <test-method status="FAIL" signature="testcase001()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase001" duration-ms="17" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at testngdemo.TestNGDemo.testcase001(TestNGDemo.java:121)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase004 -->
-        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="2" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+        </test-method> <!-- testcase001 -->
+        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearMethod -->
-        <test-method status="PASS" signature="tearClass()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearClass" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+        <test-method status="PASS" signature="testcase002()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase002" duration-ms="1007" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:23 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase002 -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="0" started-at="2023-01-24T23:36:21 SGT" finished-at="2023-01-24T23:36:21 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="0" started-at="2023-01-24T23:36:23 SGT" finished-at="2023-01-24T23:36:23 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearMethod -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:23 SGT" finished-at="2023-01-24T23:36:23 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="testcase003()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase003" duration-ms="1015" started-at="2023-01-24T23:36:23 SGT" finished-at="2023-01-24T23:36:24 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase003 -->
+        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:24 SGT" finished-at="2023-01-24T23:36:24 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearMethod -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:24 SGT" finished-at="2023-01-24T23:36:24 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="testcase004()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase004" duration-ms="1005" started-at="2023-01-24T23:36:24 SGT" finished-at="2023-01-24T23:36:25 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase004 -->
+        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:25 SGT" finished-at="2023-01-24T23:36:25 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearMethod -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="initMethod" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:25 SGT" finished-at="2023-01-24T23:36:25 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="testcase005()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase005" duration-ms="1006" started-at="2023-01-24T23:36:25 SGT" finished-at="2023-01-24T23:36:26 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase005 -->
+        <test-method status="PASS" signature="tearMethod()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearMethod" is-config="true" duration-ms="0" started-at="2023-01-24T23:36:26 SGT" finished-at="2023-01-24T23:36:26 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearMethod -->
+        <test-method status="SKIP" signature="testcase006()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="testcase006" duration-ms="0" depends-on-groups="smoke, sanity" started-at="2023-01-24T23:36:26 SGT" finished-at="2023-01-24T23:36:26 SGT">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGDemo.testcase006()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf] depends on not successfully finished methods in group "smoke"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGDemo.testcase006()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf] depends on not successfully finished methods in group "smoke"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase006 -->
+        <test-method status="PASS" signature="tearClass()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearClass" is-config="true" duration-ms="2" started-at="2023-01-24T23:36:26 SGT" finished-at="2023-01-24T23:36:26 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearClass -->
-        <test-method status="PASS" signature="tearTest()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearTest" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+        <test-method status="PASS" signature="tearTest()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearTest" is-config="true" duration-ms="0" started-at="2023-01-24T23:36:26 SGT" finished-at="2023-01-24T23:36:26 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearTest -->
-        <test-method status="PASS" signature="tearsuite()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearsuite" is-config="true" duration-ms="0" started-at="2023-01-19T23:31:20 SGT" finished-at="2023-01-19T23:31:20 SGT">
+        <test-method status="PASS" signature="tearsuite()[pri:0, instance:testngdemo.TestNGDemo@13eb8acf]" name="tearsuite" is-config="true" duration-ms="1" started-at="2023-01-24T23:36:26 SGT" finished-at="2023-01-24T23:36:26 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearsuite -->
       </class> <!-- testngdemo.TestNGDemo -->
-    </test> <!-- Test_Demo1(failed) -->
-  </suite> <!-- Failed suite [Suite_Demo] -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -22,7 +22,7 @@ public class GoogleSearchDemoIE {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-		capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+//		capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 		capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
 		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		WebDriver driver = new InternetExplorerDriver(capabilities);
@@ -35,7 +35,7 @@ public class GoogleSearchDemoIE {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 
-		driver.findElement(By.cssSelector("input[name='q'][title='Search']")).sendKeys("DevLabsalliance.com",
+		driver.findElement(By.cssSelector("input[name='q']")).sendKeys("DevLabsalliance.com",
 				Keys.ENTER);
 
 		Thread.sleep(5000);

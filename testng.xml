@@ -4,7 +4,7 @@
 
 <suite name="Suite_Demo">
 
-	<test thread-count="5" name="Test_Demo1">
+	<test thread-count="5" name="Test_Demo1" verbose="9">
 
 		<classes>
 			<class name="testngdemo.TestNGDemo" />

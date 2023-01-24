@@ -13,7 +13,10 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+@Listeners(testngdemo.ListenerTest.class)
 
 public class TestNGDemo {
 	
@@ -90,6 +93,8 @@ public class TestNGDemo {
 	}
 	
 	
+	
+	
 	@Test(groups="smoke", alwaysRun = true)
 	public void testcase002() throws InterruptedException {
 
@@ -113,7 +118,7 @@ public class TestNGDemo {
 
 		System.out.println("inside testcase001 test case"+new Date());
 		
-		Assert.assertEquals(1, 1);
+		Assert.assertEquals(1, 2);
 		Thread.sleep(1000);
 	}
 	
@@ -131,6 +136,14 @@ public class TestNGDemo {
 		System.out.println("inside testcase005 test case"+new Date());
 		Assert.assertEquals(1, 1);
 		Thread.sleep(1000);
+	}
+	
+	
+	@Test(dependsOnGroups = {"sanity","smoke"})
+	public void testcase006() throws InterruptedException {
+
+		System.out.println("....demo of depends on groups .......smoke sanity .... "+new Date());
+		
 	}
 
 }
